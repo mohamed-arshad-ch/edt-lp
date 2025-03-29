@@ -11,6 +11,8 @@ import FAQ from "@/components/sections/faq"
 import Newsletter from "@/components/sections/newsletter"
 import Contact from "@/components/sections/contact"
 import Map from "@/components/sections/map"
+import ContactOffices from "@/components/sections/contact-offices"
+import ContactForm from "@/components/sections/contact-form"
 
 export default function Home() {
   return (
@@ -31,7 +33,8 @@ export default function Home() {
         <FAQ />
         <WaveDivider />
         <Newsletter />
-        <Contact />
+        <ContactForm />
+        <ContactOffices />
         <Map />
       </main>
 
