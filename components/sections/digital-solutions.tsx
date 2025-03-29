@@ -33,7 +33,7 @@ export default function DigitalSolutions() {
           </div>
 
           <div className="space-y-8">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-gradient-to-br from-white to-pink-50 border-none shadow-md hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-4">
