@@ -124,9 +124,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Navigation arrows */}
+      {/* Navigation arrows - hidden on mobile */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors hidden md:block"
         onClick={goToPrevSlide}
         aria-label="Previous slide"
       >
@@ -134,7 +134,7 @@ export default function Hero() {
       </button>
 
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors hidden md:block"
         onClick={goToNextSlide}
         aria-label="Next slide"
       >
