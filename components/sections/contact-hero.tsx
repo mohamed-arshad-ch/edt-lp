@@ -19,6 +19,8 @@ export default function ContactHero() {
   }, [])
 
   const calculateTranslate = (axis: "x" | "y", factor: number) => {
+    if (typeof window === 'undefined') return 0;
+    
     const value =
       axis === "x"
         ? (mousePosition.x / window.innerWidth - 0.5) * factor
