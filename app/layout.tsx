@@ -18,10 +18,42 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "EDT - Digital Solutions for Healthcare Providers",
-  description:
-    "Custom digital solutions for healthcare providers to improve patient care, streamline operations, and drive growth.",
-    generator: 'v0.dev'
+  title: "EDT - Healthcare Digital Solutions & Medical Technology Services",
+  description: "Expert digital healthcare solutions for medical providers: EHR integration, HIPAA-compliant websites, patient engagement platforms, and healthcare IT services. Transform your medical practice with EDT.",
+  keywords: "healthcare digital solutions, medical technology services, HIPAA compliant websites, healthcare IT services, medical practice management, patient engagement platforms, healthcare digital transformation, medical software solutions, healthcare web development, medical practice optimization",
+  openGraph: {
+    title: "EDT - Healthcare Digital Solutions & Medical Technology Services",
+    description: "Transform your healthcare practice with EDT's comprehensive digital solutions. HIPAA-compliant, patient-centered technology services for modern medical providers.",
+    type: "website",
+    locale: "en_US",
+    siteName: "EDT Healthcare Solutions",
+    images: [
+      {
+        url: "/edt-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EDT Healthcare Digital Solutions"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EDT - Healthcare Digital Solutions",
+    description: "Innovative digital solutions for modern healthcare providers. HIPAA-compliant technology services.",
+    images: ["/edt-logo.png"]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+ 
 }
 
 export default function RootLayout({
