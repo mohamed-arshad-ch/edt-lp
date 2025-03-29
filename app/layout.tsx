@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
+import WhatsAppButton from "@/components/common/whatsapp-button"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,6 +70,10 @@ export default function RootLayout({
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
+          <WhatsAppButton 
+            phoneNumber="919876543210" // Replace with your actual WhatsApp number
+            message="Hello! I'm interested in EDT's healthcare digital solutions."
+          />
         </ThemeProvider>
       </body>
     </html>

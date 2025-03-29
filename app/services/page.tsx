@@ -3,6 +3,7 @@ import Footer from "@/components/layout/footer"
 import ServicesHero from "@/components/sections/services-hero"
 import ServicesGrid from "@/components/sections/services-grid"
 import ServicesCTA from "@/components/sections/services-cta"
+import Newsletter from "@/components/sections/newsletter"
 
 export default function ServicesPage() {
   return (
@@ -12,7 +13,7 @@ export default function ServicesPage() {
       <main className="flex-1 pt-20">
         <ServicesHero />
         <ServicesGrid />
-        <ServicesCTA />
+        <Newsletter />
       </main>
 
       <Footer />

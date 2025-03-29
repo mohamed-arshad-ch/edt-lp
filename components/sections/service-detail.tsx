@@ -17,6 +17,7 @@ import {
   Phone,
 } from "lucide-react"
 import type { Service } from "@/lib/services"
+import Newsletter from "./newsletter"
 
 export default function ServiceDetail({ service }: { service: Service }) {
   const getIcon = (iconName: string) => {
@@ -194,31 +195,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="bg-gradient-to-r from-[#D64B65] to-[#e06377] rounded-2xl p-12 text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started with {service.title}?</h2>
-
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Contact us today to discuss how our {service.title} service can help your healthcare organization thrive.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-[#D64B65] hover:bg-gray-100 rounded-full px-8 py-6 text-lg font-bold">
-                Request a Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-
-              <Button
-                variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-bold"
-              >
-                View All Services
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Newsletter />
     </>
   )
 }

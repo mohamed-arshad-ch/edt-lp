@@ -5,6 +5,7 @@ import ContactHero from "@/components/sections/contact-hero"
 import ContactForm from "@/components/sections/contact-form"
 import ContactOffices from "@/components/sections/contact-offices"
 import ContactTeam from "@/components/sections/contact-team"
+import Newsletter from "@/components/sections/newsletter"
 
 export default function ContactPage() {
   return (
@@ -16,6 +17,7 @@ export default function ContactPage() {
         <ContactForm />
         <ContactOffices />
         <ContactTeam />
+        <Newsletter />
       </main>
 
       <Footer />

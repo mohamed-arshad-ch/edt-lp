@@ -5,6 +5,7 @@ import AboutTransforming from "@/components/sections/about-transforming"
 import AboutWhyChooseUs from "@/components/sections/about-why-choose-us"
 import AboutCTA from "@/components/sections/about-cta"
 import AboutTeam from "@/components/sections/about-team"
+import Newsletter from "@/components/sections/newsletter"
 
 export default function AboutUsPage() {
   return (
@@ -15,8 +16,8 @@ export default function AboutUsPage() {
         <AboutHero />
         <AboutTransforming />
         <AboutWhyChooseUs />
-        <AboutTeam />
-        <AboutCTA />
+        <Newsletter />
+        {/* <AboutCTA /> */}
       </main>
 
       <Footer />
